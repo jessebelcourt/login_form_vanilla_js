@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #header-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header-text">Login</h1>
+    <form action="">
+        <input type="email" placeholder="Enter email here" id="email-field"><br>
+        <input type="password" placeholder="password"><br>
+
+        <button id="login-submit">Login</button>
+    </form>
+
+    <script>
+        let name = "shitty nick";
+        name = "someoneelse";
+        const age = 100;
+        var shittyVariable = true;
+
+        let someNum = 100;
+        let someFloat = 3.14;
+        let someBoolean = true;
+        let someString = "nick is shitty";
+        let someOtherString = 'another string';
+
+        let cat = {
+            name: 'Tim',
+            age: 13,
+            isAlive: true,
+        };
+
+        let userOne = {
+            email: "jessebelcourt@gmail.com",
+            username: 'fuckyfuck99',
+            address: '555 somestreet',
+            admin: false,
+        };
+        
+        let userTwo = {
+            username: 'buttercup38',
+            email: "buttercup38@gmail.com",
+            address: '555 somestreet',
+            admin: true,
+        };
+
+        let someNums = [2, 4, 1, 2, 5];
+        let cities = ["Denver", "Portland"];
+
+        let users = [userOne, userTwo];
+
+        // for(let i = 0; i < users.length; i++) {
+            
+        //     let user = users[i];
+        //     console.log(user.username);
+        // }
+
+        let emailField = document.getElementById("email-field");
+
+        let loginSubmit = document.getElementById('login-submit');
+
+        loginSubmit.addEventListener('click', function(e){
+            e.preventDefault();
+            
+            console.log('button clicked');
+        })
+        
+
+        emailField.addEventListener('change', function(event) {
+            // let emailValue = e.target.value;
+            console.log('event :', event.target.value);
+            let emailValue = emailField.value;
+            console.log('emailValue :', emailValue);
+        });
+        
+
+        
+        // function sayName() {
+        //     let name = "Shitty Dylan";
+        //     let age = 23;
+        //     console.log(name);
+        // }
+
+        // sayName();
+
+        // console.log(name);
+    </script>
+</body>
+</html>
